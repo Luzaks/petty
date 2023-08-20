@@ -1,4 +1,4 @@
-import { Contents } from '../../models';
+import { Contents, State } from '../../models';
 
 export interface NavbarProps {
     homeRoute: Contents.RouteProps;
@@ -7,4 +7,6 @@ export interface NavbarProps {
     isAuth: boolean;
     routes: any[];
     handleOnClickRoute: (route: Contents.RouteProps) => void;
+    location: string;
+    authUser?: State.AppState.AuthUserProps
 }

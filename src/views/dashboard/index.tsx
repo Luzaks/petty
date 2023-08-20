@@ -7,14 +7,13 @@ import './index.css';
 
 const DashboardPage = ({}) => {
     const navigate = useNavigate();
-    const { DasboardState, AppState } = State;
+    const { AppState } = State;
     const { AppContent, DashboardContent } = Contents;
-    const { authState } = AppState;
-    const { authRoutes } = DasboardState;
+    const { authState, authRoutes, authUser } = AppState;
     const { homeRoute, loginRoute } = AppContent;
     const { pageTitle } = DashboardContent;
     const [routes, setRoutes] = useState(authRoutes);
-
+    const locationWindow: string = window.location.pathname;
 
 
     useEffect(() => {
@@ -48,6 +47,8 @@ const DashboardPage = ({}) => {
                         isAuth={authState}
                         handleOnClickRoute={handleOnClickRoute}
                         pageTitle={pageTitle}
+                        location={locationWindow}
+                        authUser={authUser}
                         ></NavBar>
                </div>
             )}

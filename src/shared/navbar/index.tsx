@@ -1,5 +1,8 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 import { Logo, Dropdown } from '../index';
 
@@ -10,18 +13,18 @@ import './index.css';
 
 const NavBar = (navbarProps: NavbarProps) => {
 
-    const { homeRoute, pageTitle, loginRoute, isAuth, routes, handleOnClickRoute } = navbarProps;
+    const { homeRoute, pageTitle, loginRoute, isAuth, routes, handleOnClickRoute, location, authUser } = navbarProps;
 
     return(
         <div className="navigation-container">
-            <div className='flex items-center justify-start'>
+            <div className='navigation-routes-container'>
                 <div className='mr-10'>
                    <Logo route={homeRoute.route} image={LandingLogo} title={pageTitle}></Logo>
                 </div>
-                <div className='flex'>
+                <div className='navigation-routes-inner-container'>
                     {
                     routes.map((route, index) => (
-                        <div className='navigation-routing-btn' key={index} onClick={() => handleOnClickRoute(route)}>
+                        <div className={isAuth && (location === route.route) ? 'navigation-dash-routing-btn-selected' : 'navigation-dash-routing-btn'} key={index} onClick={() => handleOnClickRoute(route)}>
                             {route.title}
                 
                                 {route.dropdown && !route.isOpened && (
@@ -57,11 +60,25 @@ const NavBar = (navbarProps: NavbarProps) => {
                 )
             }
             {
-                isAuth && (
-                    <div className='flex'>
-                        <button>x</button>
-                        <button>y</button>
+                isAuth && authUser && (
+                    <>
+                    <div className='navigation-auth-user-menu'>
+                        <button className='mr-4'>
+                            <SettingsOutlinedIcon></SettingsOutlinedIcon>
+                        </button>
+                        <button className='mr-5'>
+                            <NotificationsOutlinedIcon></NotificationsOutlinedIcon>
+                        </button>
+                        <button>
+                            <img src={authUser.avatar} alt={authUser.name} />
+                        </button>
                     </div>
+                    <div className='navigation-auth-user-dropdown'>
+                        <button>
+                            <MenuOutlinedIcon></MenuOutlinedIcon>
+                        </button>
+                    </div>
+                    </>
                 )
             }
         </div>

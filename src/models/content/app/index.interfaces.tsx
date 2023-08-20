@@ -9,4 +9,5 @@ export interface RouteProps {
     route: string;
     dropdown?: DropdownProps[];
     isOpened?: boolean;
+    isActualLocation?: boolean;
 }
