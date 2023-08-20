@@ -1,10 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+
 import { ScrollContainer } from '../../shared';
+import { Contents } from '../../models';
 import LogoMark from '../../assets/images/logomark.svg';
-import  { Contents } from '../../models';
 import './index.css';
 
 const LoginPage = ({}) => {
 
+    const navigate = useNavigate();
     const { LoginContent } = Contents;
     const { 
         titleHeader, 
@@ -19,6 +22,9 @@ const LoginPage = ({}) => {
 
     const handleSubmit = (e: any) => {
         e.preventDefault();
+        // TO DO: Implement logic for validation.
+        navigate('/dashboard');
+
     } ;
 
     return(
@@ -35,8 +41,7 @@ const LoginPage = ({}) => {
                     <h2 className='login-form-subheader'>{titleSubHeader}</h2>
                 </section>
                 <section className='login-section-column'>
-                    <input 
-                    className='login-form-input mb-4 2xl:mb-6 xl:mb-6 lg:mb-6' placeholder={emailPlaceholder} name="username" type="email" />
+                    <input className='login-form-input mb-4 2xl:mb-6 xl:mb-6 lg:mb-6' placeholder={emailPlaceholder} name="username" type="email" />
                     <input className='login-form-input' name="password" type="password" />
                 </section>
                 <section className="login-section-row my-4">
