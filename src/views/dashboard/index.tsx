@@ -1,13 +1,13 @@
-import { Layout } from '../../shared';
+import { ScrollContainer } from '../../shared';
 import './index.css';
 
 const DashboardPage = ({}) => {
     return(
-        <Layout>
+        <ScrollContainer>
             {(
                <div>Dashboard</div>
             )}
-        </Layout>
+        </ScrollContainer>
     );
 };
 

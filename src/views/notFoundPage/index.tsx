@@ -1,13 +1,13 @@
-import { Layout } from '../../shared';
+import { ScrollContainer } from '../../shared';
 import './index.css';
 
 const NotFoundPage = ({}) => {
     return(
-        <Layout>
+        <ScrollContainer>
             {(
                 <div>Login</div>
             )}
-        </Layout>
+        </ScrollContainer>
     );
 };
 

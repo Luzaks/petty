@@ -1,1 +1,5 @@
-// Page contents
+import * as LoginContent from './login';
+
+export {
+    LoginContent,
+};
