@@ -1,0 +1,3 @@
+.layout-container {
+    @apply w-screen h-screen overflow-y-scroll relative z-0;
+}
