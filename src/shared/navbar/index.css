@@ -1,0 +1,8 @@
+.navigation-container {
+    @apply fixed w-full h-[80px] border-b-[1px] border-gray-100 p-4 flex items-center justify-between;
+    @apply px-32 z-10 bg-white;
+}
+
+.navigation-routing-btn {
+    @apply  w-fit mr-8 relative text-base text-gray-500 cursor-pointer;
+}
