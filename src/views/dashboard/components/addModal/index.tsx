@@ -68,7 +68,7 @@ const AddModal = ({ handleAddModal, countries, genres, handleSubmit }: AddModalP
             <div onClick={handleAddModal} className='add-modal-bg'></div>
             <div className='add-modal-content-container'>
                 <div className='add-modal-content-container-header'>
-                    <img src={DashboardContent.addDesktopIcon} alt="add-btn" />
+                    <div className='add-icon'></div>
                     <h2 className='text-base font-medium my-4'>Agregar Nuevo Usuario</h2>
                     <span className='text-gray-500 text-xs'>This blog post has been published. Team members will be able to edit this post and republish changes.</span>
                 </div>
@@ -82,7 +82,7 @@ const AddModal = ({ handleAddModal, countries, genres, handleSubmit }: AddModalP
                             type="text" 
                             value={userName} 
                             onChange={handleOnChange} 
-                            placeholder={'Marta hey'} 
+                            placeholder={'Marta Sahagún'} 
                         />
                     </label>
                     <label className='add-label-input' htmlFor="country">
@@ -125,7 +125,7 @@ const AddModal = ({ handleAddModal, countries, genres, handleSubmit }: AddModalP
                     </label>    
                     <section className='add-actions-container'>
                         <button className='add-modal-input-button cancel-btn' onClick={handleAddModal}>Cancel</button>
-                        <button className='add-modal-input-button confirm-btn' type='submit'>Confirm</button>
+                        <button className='add-modal-input-button bg-blue-600 text-white' type='submit' >Confirm</button>
                     </section>
                 </form>
             </div>

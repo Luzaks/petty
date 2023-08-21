@@ -52,7 +52,7 @@ const NavBar = (navbarProps: NavbarProps) => {
             {
                 !isAuth && loginRoute && (
                     <div className='flex'>
-                    <button className='navigation-routing-btn' onClick={() => handleOnClickRoute(loginItem)}>
+                    <button className='navigation-routing-btn' onClick={() => handleOnClickRoute(loginRoute)}>
                         {loginRoute.title}
                     </button> 
                     <button className='w-fit bg-blue-600 rounded-lg	py-2 px-4 text-white font-light text-base' type='submit'>Sign up</button>

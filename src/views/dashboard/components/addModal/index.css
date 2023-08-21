@@ -15,6 +15,10 @@
     @apply flex flex-col items-start text-start;
 }
 
+.add-icon {
+    @apply bg-add-mobile bg-contain bg-no-repeat bg-center h-[56px] w-[56px] 2xl:bg-add-desktop xl:bg-add-desktop lg:bg-add-desktop md:bg-add-desktop;
+}
+
 .add-input-no-error {
     @apply p-2 w-full h-10 border-2 border-gray-100 rounded-lg text-sm;
 }
