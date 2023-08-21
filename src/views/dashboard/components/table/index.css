@@ -1,0 +1,25 @@
+.dash-table-container {
+    @apply w-full h-full;
+}
+
+.dash-table-component {
+    @apply w-full rounded-lg bg-white table-fixed shadow;
+}
+
+.dash-table-t-head {
+    @apply bg-gray-50 h-10 border-[1px] border-gray-100 rounded-lg text-gray-500 font-light text-xs;
+}
+
+th, td {
+    @apply w-[9%] rounded-lg text-center;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    @apply w-[45%] text-start pl-8;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    @apply w-[3%];
+}
