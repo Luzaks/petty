@@ -14,16 +14,16 @@ export const tableHeaders: TableHeadersProps[] = [
         title: 'Cliente',
     },
     {
-        title: 'Género'
+        title: 'Género',
     },
     {
-        title: 'País'
+        title: 'País',
     },
     {
-        title: 'Estado'
+        title: 'Estado',
     },
     {
-        title: ' '
+        title: ' ',
     }
 ];
 

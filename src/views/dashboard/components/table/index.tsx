@@ -184,7 +184,7 @@ const DashTable = (dashTableProps: DashTableProps) => {
                                     <td>{user.genre}</td>
                                     <td>{user.country}</td>
                                     <td>{user.state}</td>
-                                    <td className='pr-4'>
+                                    <td>
                                         <button onClick={() => handleEraseUser(user)}>
                                             <img src={trashIcon} alt="delete" />
                                         </button>
