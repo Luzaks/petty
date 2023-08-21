@@ -4,6 +4,7 @@ import {
     type GenresProps 
 } from './index.interfaces';
 import AddDesktopIcon from '../../../assets/images/add-desktop.svg';
+import TrashIcon from '../../../assets/images/trash-icon.svg';
 
 export const pageTitle: string = 'Logotipo';
 export const tableHeaders: TableHeadersProps[] = [
@@ -97,3 +98,4 @@ export const genresAllowed: GenresProps[] = [
 ];
 
 export const addDesktopIcon: string = AddDesktopIcon;
+export const trashIcon: string = TrashIcon;

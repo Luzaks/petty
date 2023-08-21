@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ScrollContainer, NavBar } from '../../shared';
 import { DashTable, AddModal } from './components';
@@ -43,6 +43,11 @@ const DashboardPage = ({}) => {
     const handleAddNewUser = (user: UserProps) => {
         setUsers([...users, {...user}]);
     };
+
+    const handleEraseUser = (user: UserProps) => {
+        const filteredUsers: UserProps[] = users.filter((item) => item.id !== user.id);
+        setUsers([...filteredUsers]);
+    };
     
     return(
         <ScrollContainer>
@@ -72,6 +77,7 @@ const DashboardPage = ({}) => {
                                 tableHeaders={tableHeaders} 
                                 users={users}
                                 handleAddModal={handleAddModal}
+                                handleEraseUser={handleEraseUser}
                             ></DashTable>
                         </div>
 

@@ -1,8 +1,11 @@
 import { DashTableProps } from './index.interfaces';
+import { Contents } from '../../../../models';
 import './index.css';
 
 const DashTable = (dashTableProps: DashTableProps) => {
-    const { tableHeaders, users, handleAddModal } = dashTableProps;
+    const { tableHeaders, users, handleAddModal, handleEraseUser } = dashTableProps;
+    const { DashboardContent } = Contents;
+    const { trashIcon } = DashboardContent;
     return (
         <div className="dash-table-container">
             <button onClick={handleAddModal}>Nuevo</button>
@@ -24,7 +27,11 @@ const DashTable = (dashTableProps: DashTableProps) => {
                                     <td>{user.genre}</td>
                                     <td>{user.country}</td>
                                     <td>{user.state}</td>
-                                    <td>c</td>
+                                    <td className='pr-4'>
+                                        <button onClick={() => handleEraseUser(user)}>
+                                            <img src={trashIcon} alt="delete" />
+                                        </button>
+                                    </td>
                                 </tr>
                             ))
                         }
