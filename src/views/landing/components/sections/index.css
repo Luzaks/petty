@@ -3,5 +3,5 @@
 }
 
 .section-one-div {
-    @apply w-full h-1/2 2xl:w-1/2 xl:w-1/2 lg:w-1/2 2xl:h-full xl:h-full lg:h-full flex flex-col justify-evenly items-start pb-[5rem] lg:pb-0;
+    @apply w-full h-[100vh] 2xl:w-1/2 xl:w-1/2 lg:w-1/2 2xl:h-full xl:h-full lg:h-full flex flex-col justify-evenly items-start pb-[5rem] lg:pb-0;
 }

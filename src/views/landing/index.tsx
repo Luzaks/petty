@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import { ScrollContainer, NavBar } from '../../shared';
-import { Sections } from './components';
-import { State, Contents } from '../../models';
 import { useNavigate } from 'react-router-dom';
+
+
+import { ScrollContainer, NavBar } from '../../shared';
+import { Sections, FAQ } from './components';
+import { State, Contents } from '../../models';
 import './index.css';
 
 const LandingPage = ({}) => {
@@ -48,10 +50,11 @@ const LandingPage = ({}) => {
                     location={locationWindow}
                     authUser={authUser}
                 ></NavBar>
-                <div className='flex w-full h-full items-center justify-center'>
-                <div className='landing-content-inner-container max-w-[1280px]'>
-                            <Sections></Sections>
+                <div className='flex flex-col w-full h-fit items-center justify-center'>
+                  <div className='landing-content-inner-container max-w-[1280px]'>
+                      <Sections></Sections>
                     </div>
+                    <FAQ></FAQ>
                 </div>
               </div>
             )}

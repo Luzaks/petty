@@ -121,7 +121,7 @@ const Sections = ({}) => {
 
     return(
         <div className="sections-container">
-            <div className='w-full h-[200vh] lg:h-full flex items-center justify-center'>
+            <div className='w-full h-[170vh] lg:h-[100vh] flex items-center justify-center'>
                 <div className='w-full h-full flex flex-col lg:flex-row'>
                     <div className='section-one-div'>
                         <div className='w-full flex flex-col items-start text-start'>
@@ -163,7 +163,7 @@ const Sections = ({}) => {
                           
                         </div>
                     </div>
-                    <div className='relative w-full h-1/2 lg:w-1/2 lg:h-full'>
+                    <div className='relative w-full h-[70vh] lg:w-1/2 lg:h-full'>
                         <div className='absolute bottom-0 w-full h-2/3 lg:h-full bg-gray-100 rounded-t-full'>
                             
                         </div>
@@ -173,9 +173,9 @@ const Sections = ({}) => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-fit 2xl:h-1/2 xl:h-1/2 lg:h-1/2 pt-10 lg:pt-0 flex flex-col items-center'>
+            <div className='w-full h-[75vh] lg:h-[50vh] pt-10 lg:pt-0 flex flex-col items-center'>
                 
-                <div className='w-full h-1/2 flex flex-col items-center justify-center bg-blue-50 2xl:bg-transparent xl:bg-transparent lg:bg-transparent pt-10 2xl:pt-0 xl:pt-0'>
+                <div className='w-full h-1/2 flex flex-col items-center justify-center bg-blue-50 px-4 lg:px-0 text-center lg:bg-transparent pt-10 2xl:pt-0 xl:pt-0'>
                     <h2 className='text-2xl 2xl:text-4xl xl:text-4xl lg:text-4xl font-normal leading-[1.5rem] 2xl:leading-[3rem] xl:leading-[3rem] lg:leading-[3rem]'>{sectionTwoTitle}</h2>
                     <h3 className='text-base text-gray-500'>{sectionTwoSubTitle}</h3>
                 </div>
@@ -191,9 +191,9 @@ const Sections = ({}) => {
                     }
                 </div>
             </div>
-            <div className='w-full h-full 2xl:h-1/2 xl:h-1/2 lg:h-1/2 py-4 lg:py-20 flex items-center justify-center'>
+            <div className='w-full h-[75vh] lg:h-[50vh] my-4 lg:my-20 flex items-start justify-center'>
                 <div className='max-w-[1280px] w-full h-full flex flex-col lg:flex-row '>
-                <div className='w-full py-10 lg:w-1/2 h-1/2 lg:h-full flex flex-col items-start justify-between'>
+                <div className='w-full lg:w-1/2 h-1/2 lg:h-full flex flex-col items-start justify-evenly lg:justify-between my-8 lg:my-0'>
                         <div>
                             {
                                         stars.map((start, index) => (
