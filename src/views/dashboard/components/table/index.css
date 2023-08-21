@@ -11,7 +11,7 @@
 }
 
 .filter-button {
-    @apply rounded-lg text-center font-light align-middle py-1.5 px-3.5 text-xs;
+    @apply rounded-lg text-center font-light align-middle py-1.5 px-1.5 text-xs md:px-3.5;
 }
 
 .filter-button-white {
@@ -38,4 +38,12 @@ td:nth-child(5) {
 
 .user-table-row {
     @apply h-12 text-xs text-gray-900 font-normal border-b-[1px] border-gray-100;
+}
+
+.user-table-filter {
+    @apply mr-2 cursor-pointer bg-blue-100 rounded-md text-blue-600 font-medium;
+}
+
+.user-table-filter-input {
+    @apply mb-2 md:mr-2 md:mt-2 text-gray-500 border-[1px] border-gray-300 rounded-md h-[30px] w-full lg:w-[30%] lg:max-w-[200px] px-4 py-1;
 }
