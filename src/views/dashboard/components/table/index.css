@@ -23,17 +23,27 @@
 }
 
 th, td {
-    @apply w-[9%] rounded-lg text-center;
+    @apply w-[5%] md:w-[9%] rounded-lg text-center;
 }
 
 th:nth-child(1),
 td:nth-child(1) {
-    @apply w-[45%] text-start pl-8;
+    @apply w-[95%] md:w-[45%] text-start pl-8;
+}
+
+
+th:nth-child(3),
+td:nth-child(3),
+th:nth-child(4),
+td:nth-child(4),
+th:nth-child(5),
+td:nth-child(5) {
+    @apply invisible md:visible;
 }
 
 th:nth-child(5),
 td:nth-child(5) {
-    @apply w-[3%];
+    @apply w-[3%] pr-4;
 }
 
 .user-table-row {

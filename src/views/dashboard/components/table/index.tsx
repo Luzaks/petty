@@ -215,7 +215,11 @@ const DashTable = (dashTableProps: DashTableProps) => {
                                             <span>{user.name + ' ' + user.lastName}</span>
                                         </div>
                                     </td>
-                                    <td>{user.genre}</td>
+                                    <td>
+                                        <span className={user.genre === 'Hombre' ? 'bg-emerald-50 py-1 px-2 text-emerald-700 rounded-full w-fit' : 'bg-violet-50 py-1 px-2 text-violet-700 rounded-full w-fit'}>
+                                            {user.genre}
+                                        </span>
+                                    </td>
                                     <td>{user.country}</td>
                                     <td>{user.state}</td>
                                     <td>
