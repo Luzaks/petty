@@ -1,0 +1,7 @@
+.sections-container {
+    @apply w-full h-full overflow-y-visible;
+}
+
+.section-one-div {
+    @apply w-full h-1/2 2xl:w-1/2 xl:w-1/2 lg:w-1/2 2xl:h-full xl:h-full lg:h-full flex flex-col justify-evenly items-start pb-[8rem] lg:pb-0;
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ScrollContainer, NavBar } from '../../shared';
+import { Sections } from './components';
 import { State, Contents } from '../../models';
 import { useNavigate } from 'react-router-dom';
 import './index.css';
@@ -47,6 +48,9 @@ const LandingPage = ({}) => {
                   location={locationWindow}
                   authUser={authUser}
               ></NavBar>
+                    <div className='landing-content-inner-container'>
+                            <Sections></Sections>
+                    </div>
               </div>
             )}
         </ScrollContainer>

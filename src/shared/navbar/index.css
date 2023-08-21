@@ -1,6 +1,6 @@
 .navigation-container {
     @apply fixed w-full h-[64px] 2xl:h-[80px] xl:h-[80px] lg:h-[80px] border-b-[1px] border-gray-100 p-4 flex items-center justify-between;
-    @apply px-8 2xl:px-32 xl:px-32 lg:px-32 z-10 bg-white;
+    @apply px-8 2xl:px-32 xl:px-32 lg:px-32 z-[900] bg-white;
 }
 
 .navigation-routes-container {

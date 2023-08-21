@@ -5,6 +5,7 @@ import { type OptionsProps, type DropdownProps } from './dropdown/index.interfac
 import Logo from './logo';
 import NavBar from './navbar';
 import { type NavbarProps } from './navbar/index.interfaces';
+import Notification from './notification';
 
 export {
     ScrollContainer,
@@ -14,5 +15,6 @@ export {
     DropdownProps,
     Logo,
     NavBar,
-    NavbarProps
+    NavbarProps,
+    Notification
 };

@@ -1,0 +1,3 @@
+.background {
+    @apply absolute w-[320px] h-[72px] relative p-4 rounded-lg bg-white;
+}

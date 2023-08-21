@@ -1,3 +1,6 @@
 .cont {
     @apply w-screen bg-red-100;
 }
+.landing-content-inner-container {
+    @apply w-full h-full pt-[74px] 2xl:pt-[90px] xl:pt-[90px] lg:pt-[90px] px-8 2xl:px-32 xl:px-32 lg:px-32;
+}
