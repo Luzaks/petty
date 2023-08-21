@@ -163,23 +163,23 @@ const Sections = ({}) => {
                           
                         </div>
                     </div>
-                    <div className='w-full h-1/2 2xl:w-1/2 xl:w-1/2 lg:w-1/2 2xl:h-full xl:h-full lg:h-full'>
-                        <div className=' w-full h-full bg-gray-100 rounded-t-full'>
-                            <div className='bg-hero-pattern bg-bottom bg-no-repeat w-full h-full rounded-t-full flex items-end justify-center relative'>
+                    <div className='relative w-full h-1/2 lg:w-1/2 lg:h-full'>
+                        <div className='absolute bottom-0 w-full h-2/3 lg:h-full bg-gray-100 rounded-t-full'>
+                            
+                        </div>
+                        <div className='absolute top-0 left-1/2 transform -translate-x-1/2 bg-hero-pattern bg-contain bg-bottom bg-no-repeat w-[80%] lg:w-full h-full flex items-end justify-center relative'>
                            
                         </div>
-                        </div>
-                      
                     </div>
                 </div>
             </div>
-            <div className='w-screen h-fit 2xl:h-1/2 xl:h-1/2 lg:h-1/2 pt-10 2xl:pt-0 xl:pt-0 lg:pt-0 px-4 2xl:px-20 xl:px-20 lg:px-20 flex flex-col items-center'>
+            <div className='w-full h-fit 2xl:h-1/2 xl:h-1/2 lg:h-1/2 pt-10 lg:pt-0 flex flex-col items-center'>
                 
-                <div className='w-full max-w-[1280px] h-1/2 flex flex-col items-center justify-center bg-blue-50 2xl:bg-transparent xl:bg-transparent lg:bg-transparent pt-10 2xl:pt-0 xl:pt-0'>
+                <div className='w-full h-1/2 flex flex-col items-center justify-center bg-blue-50 2xl:bg-transparent xl:bg-transparent lg:bg-transparent pt-10 2xl:pt-0 xl:pt-0'>
                     <h2 className='text-2xl 2xl:text-4xl xl:text-4xl lg:text-4xl font-normal leading-[1.5rem] 2xl:leading-[3rem] xl:leading-[3rem] lg:leading-[3rem]'>{sectionTwoTitle}</h2>
                     <h3 className='text-base text-gray-500'>{sectionTwoSubTitle}</h3>
                 </div>
-                <div className='w-full max-w-[1280px] h-fit 2xl:h-1/2 xl:h-1/2 lg:h-1/2 bg-blue-50 pb-20 2xl:pb-0 xl:pb-0 lg:pb-0 rounded-lg flex flex-col 2xl:flex-row xl:flex-row lg:flex-row items-center justify-center'>
+                <div className='w-full h-fit 2xl:h-1/2 xl:h-1/2 lg:h-1/2 bg-blue-50 pb-20 2xl:pb-0 xl:pb-0 lg:pb-0 rounded-lg flex flex-col 2xl:flex-row xl:flex-row lg:flex-row items-center justify-center'>
                     {
                         metrics.map((metric, index) => (
                             <div key={index} className='px-6 h-full flex flex-col items-center justify-center'>
@@ -191,9 +191,9 @@ const Sections = ({}) => {
                     }
                 </div>
             </div>
-            <div className='w-screen h-full 2xl:h-1/2 xl:h-1/2 lg:h-1/2 p-4 2xl:p-20 xl:p-20 lg:p-20 flex items-center justify-center'>
-                <div className='max-w-[1280px] w-full h-full flex flex-col 2xl:flex-row xl:flex-row lg:flex-row '>
-                <div className='w-full py-10 2xl:w-1/2 xl:w-1/2 lg:w-1/2 h-1/2 2xl:h-full xl:h-full lg:h-full flex flex-col items-start justify-between'>
+            <div className='w-full h-full 2xl:h-1/2 xl:h-1/2 lg:h-1/2 py-4 lg:py-20 flex items-center justify-center'>
+                <div className='max-w-[1280px] w-full h-full flex flex-col lg:flex-row '>
+                <div className='w-full py-10 lg:w-1/2 h-1/2 lg:h-full flex flex-col items-start justify-between'>
                         <div>
                             {
                                         stars.map((start, index) => (
@@ -202,7 +202,7 @@ const Sections = ({}) => {
                             }
                         </div>
                         <div className='flex justify-start text-start'>
-                            <h2 className='text-2xl 2xl:text-4xl xl:text-4xl lg:text-4xl font-normal leading-[1.5rem] 2xl:leading-[3rem] xl:leading-[3rem] lg:leading-[3rem]'>{sectionThreeTitle}</h2>
+                            <h2 className='text-2xl lg:text-4xl font-normal leading-[1.5rem] lg:leading-[3rem]'>{sectionThreeTitle}</h2>
                         </div>
                         <div className='w-full h-[39px] flex justify-start items-center '>
                             <div className='flex justify-start items-center'>
@@ -232,7 +232,6 @@ const Sections = ({}) => {
                 </div>
                     
             </div>
-            <div className='w-screen h-full'></div>
         </div>
     );
 

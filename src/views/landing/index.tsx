@@ -38,19 +38,21 @@ const LandingPage = ({}) => {
         <ScrollContainer>
             {(
               <div className='dashboard-content-outher-container'>
-              <NavBar 
-                  homeRoute={homeRoute}
-                  loginRoute={loginRoute}
-                  routes={routes}
-                  isAuth={false}
-                  handleOnClickRoute={handleOnClickRoute}
-                  pageTitle={pageTitle}
-                  location={locationWindow}
-                  authUser={authUser}
-              ></NavBar>
-                    <div className='landing-content-inner-container'>
+                 <NavBar 
+                    homeRoute={homeRoute}
+                    loginRoute={loginRoute}
+                    routes={routes}
+                    isAuth={false}
+                    handleOnClickRoute={handleOnClickRoute}
+                    pageTitle={pageTitle}
+                    location={locationWindow}
+                    authUser={authUser}
+                ></NavBar>
+                <div className='flex w-full h-full items-center justify-center'>
+                <div className='landing-content-inner-container max-w-[1280px]'>
                             <Sections></Sections>
                     </div>
+                </div>
               </div>
             )}
         </ScrollContainer>
