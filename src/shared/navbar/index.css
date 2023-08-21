@@ -1,0 +1,32 @@
+.navigation-container {
+    @apply fixed w-full h-[64px] 2xl:h-[80px] xl:h-[80px] lg:h-[80px] border-b-[1px] border-gray-100 p-4 flex items-center justify-between;
+    @apply px-8 2xl:px-32 xl:px-32 lg:px-32 z-10 bg-white;
+}
+
+.navigation-routes-container {
+    @apply flex items-center justify-start;
+}
+
+.navigation-routes-inner-container {
+    @apply hidden 2xl:flex xl:flex lg:flex;
+}
+
+.navigation-routing-btn {
+    @apply  w-fit mr-8 relative text-base text-gray-500 cursor-pointer;
+}
+
+.navigation-dash-routing-btn {
+    @apply  w-fit font-normal mr-2 relative text-sm text-gray-500 cursor-pointer px-2 py-1 flex items-center justify-center;
+}
+
+.navigation-dash-routing-btn-selected {
+    @apply  w-fit font-normal mr-2 relative text-sm cursor-pointer bg-blue-100 p-2 rounded-md text-blue-600 flex items-center justify-center;
+}
+
+.navigation-auth-user-menu {
+    @apply hidden 2xl:flex xl:flex lg:flex items-center text-gray-500;
+}
+
+.navigation-auth-user-dropdown {
+    @apply flex 2xl:hidden xl:hidden lg:hidden items-center text-gray-500;
+}

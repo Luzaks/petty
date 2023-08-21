@@ -1,11 +1,13 @@
 import { Outlet, Navigate } from 'react-router-dom';
+import { State } from '../../models';
 
 const PrivateRoutes = () => {
     // TO DO: Implement authentication hook
-    const auth = { 'token': true };
+    const { AppState } = State;
+    const { authState } = AppState;
     
     return(
-        auth.token ? <Outlet/> : <Navigate to='/login'/>
+        authState ? <Outlet/> : <Navigate to='/login'/>
     )
 }
 

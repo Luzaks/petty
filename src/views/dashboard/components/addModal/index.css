@@ -1,0 +1,52 @@
+.add-modal-container {
+    @apply w-screen h-screen absolute z-[1000] top-0 left-0;
+}
+
+.add-modal-bg {
+    @apply bg-black opacity-30 absolute w-full h-full top-0 left-0 cursor-pointer z-[1000];
+}
+
+.add-modal-content-container {
+    @apply z-[1001] absolute p-6 text-center transform -translate-x-1/2 -translate-y-1/2  top-1/2 left-1/2 rounded-lg shadow bg-white flex flex-col items-start justify-between;
+    @apply w-[98%] max-w-[340px] h-5/6 max-h-[592px] 2xl:w-[400px] xl:w-[400px] lg:w-[400px] md:w-[400px] 2xl:h-4/5 xl:h-4/5 lg:h-4/5 md:h-4/5;
+}
+
+.add-modal-content-container-header {
+    @apply flex flex-col items-start text-start;
+}
+
+.add-icon {
+    @apply bg-add-mobile bg-contain bg-no-repeat bg-center h-[56px] w-[56px] 2xl:bg-add-desktop xl:bg-add-desktop lg:bg-add-desktop md:bg-add-desktop;
+}
+
+.add-input-no-error {
+    @apply p-2 w-full h-10 border-2 border-gray-100 rounded-lg text-sm;
+}
+
+.add-input-error {
+    @apply p-2 w-full h-10 border-2 border-red-500 rounded-lg text-sm;
+}
+
+.add-label-input {
+    @apply w-full flex flex-col items-start text-start;
+}
+
+.add-select-input {
+    @apply w-full h-10 p-2 border-2 border-gray-100 rounded-lg cursor-pointer text-sm;
+}
+
+.add-actions-container {
+    @apply w-full flex flex-col items-center justify-between 2xl:flex-row xl:flex-row lg:flex-row md:flex-row;
+}
+
+.add-modal-input-button {
+    @apply w-full 2xl:w-[45%] xl:w-[45%] lg:w-[45%] md:w-[45%] rounded-lg text-center align-middle py-2 mt-4 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0;
+}
+
+.cancel-btn {
+    @apply border-[1px] border-gray-300 text-gray-700;
+}
+
+.confirm-btn {
+    @apply bg-blue-600 text-white;
+}
