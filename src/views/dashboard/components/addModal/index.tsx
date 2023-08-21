@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CountriesAllowedProps, GenresProps, StatesAllowedProps, DashboardContent } from '../../../../models/content';
+import { randomString } from '../../../../services';
 import { type AddModalProps } from '..';
 import './index.css';
 
@@ -32,7 +33,6 @@ const AddModal = ({ handleAddModal, countries, genres, handleSubmit }: AddModalP
     const handleOnChange = (ev: any) => {
         ev.preventDefault();
         const { value } = ev.target;
-        console.log(value.split(' ').length, 'okoko');
         if (value.trim() === '') {
             setUsernameErr(true);
         } else {
@@ -46,9 +46,10 @@ const AddModal = ({ handleAddModal, countries, genres, handleSubmit }: AddModalP
        const check: string[] = userName.split(' ').filter((item) => item !== '');
        if (check.length === 2) {
         const obj = {
-            name: userName,
-            lastName: userName,
-            avatar: userName,
+            id: randomString(11),
+            name: check[0],
+            lastName: check[1],
+            avatar: DashboardContent.defaultAvatar,
             country: selectedCountry.country,
             state: selectedState.name,
             genre: selectedGenre.genre

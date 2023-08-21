@@ -6,6 +6,8 @@ import {
 import AddDesktopIcon from '../../../assets/images/add-desktop.svg';
 import TrashIcon from '../../../assets/images/trash-icon.svg';
 
+import DefaultAvatar from '../../../assets/images/avatar-01.svg';
+
 export const pageTitle: string = 'Logotipo';
 export const tableHeaders: TableHeadersProps[] = [
     {
@@ -99,3 +101,4 @@ export const genresAllowed: GenresProps[] = [
 
 export const addDesktopIcon: string = AddDesktopIcon;
 export const trashIcon: string = TrashIcon;
+export const defaultAvatar: string = DefaultAvatar;

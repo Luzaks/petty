@@ -42,6 +42,7 @@ const DashboardPage = ({}) => {
 
     const handleAddNewUser = (user: UserProps) => {
         setUsers([...users, {...user}]);
+        handleAddModal();
     };
 
     const handleEraseUser = (user: UserProps) => {

@@ -6,6 +6,18 @@
     @apply w-full rounded-lg bg-white table-fixed shadow;
 }
 
+.dash-table-filters-container {
+    @apply w-full flex items-center justify-between;
+}
+
+.filter-button {
+    @apply rounded-lg text-center font-light align-middle py-1.5 px-3.5 text-xs;
+}
+
+.filter-button-white {
+    @apply border-[1px] border-gray-300 text-gray-700;
+}
+
 .dash-table-t-head {
     @apply bg-gray-50 h-10 border-[1px] border-gray-100 rounded-lg text-gray-500 font-light text-xs;
 }
@@ -22,4 +34,8 @@ td:nth-child(1) {
 th:nth-child(5),
 td:nth-child(5) {
     @apply w-[3%];
+}
+
+.user-table-row {
+    @apply h-12 text-xs text-gray-900 font-normal border-b-[1px] border-gray-100;
 }
