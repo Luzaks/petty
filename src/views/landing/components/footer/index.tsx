@@ -62,9 +62,9 @@ const FooterLanding = ({}) => {
                 </div>
                 <div className='flex h-[30%] md:h-fit w-full md:w-fit flex-wrap flex-col md:flex-row md:gap-x-3 items-start lg:items-center text-xs'>
                     {
-                        features.map(item => {
+                        features.map((item, index) => {
                             return(
-                                <a className='cursor-pointer'>{item}</a>
+                                <a key={index} className='cursor-pointer'>{item}</a>
                             )})
                     }
                 </div>
@@ -87,8 +87,8 @@ const FooterLanding = ({}) => {
                 </div>
                 <div className='flex order-1 lg:order-2  gap-x-3 w-full md:w-[30%] items-start mb-2 mb:mb-0 lg:items-center justify-start lg:justify-end'>
                     {
-                        social.map((item: any) => (
-                            <button className='flex items-center justify-center'>
+                        social.map((item: any, index) => (
+                            <button key={index} className='flex items-center justify-center'>
                                 <img className='scale-50' src={item.img} alt="" />
                             </button>
                         ))

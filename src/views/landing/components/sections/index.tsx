@@ -168,7 +168,9 @@ const Sections = ({}) => {
                             
                         </div>
                         <div className='absolute top-0 left-1/2 transform -translate-x-1/2 bg-hero-pattern bg-contain bg-bottom bg-no-repeat w-[80%] lg:w-full h-full flex items-end justify-center relative'>
-                           
+                        <div className='hidden absolute bottom-0 -left-[10%] w-fit h-fit 2xl:flex xl:flex lg:flex flex-col gap-y-2'>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>

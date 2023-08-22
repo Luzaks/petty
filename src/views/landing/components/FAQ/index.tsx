@@ -83,9 +83,9 @@ const FAQ = ({}) => {
                 </div>
                 <div className="fqa-content w-[80%] lg:w-[50%] max-w-[1280px] flex flex-col justify-between">
                     {
-                        content.map((question) => {
+                        content.map((question, index) => {
                             return (
-                                <div className='w-full flex flex-col text-justify border-b-[1px] border-b-gray-200 py-4 text-sm text-gray-900'>
+                                <div key={index} className='w-full flex flex-col text-justify border-b-[1px] border-b-gray-200 py-4 text-sm text-gray-900'>
                                     <div className='w-full flex justify-between items-center'>
                                         {question.title}
                                         <button onClick={() => handleOpenQuestion(question)}>
