@@ -21,8 +21,10 @@ const Sections = ({}) => {
             opacity: 'opacity-90',
             title: 'Miaw 1',
             type: 0,
-            username: 'Olivia Rhye',
-            tagname: '@oliviarhye'
+            followedBy: {
+                username: 'Olivia Rhye',
+                tagname: '@oliviarhye'
+            }
         },
         {
             opacity: 'opacity-80',
@@ -31,20 +33,11 @@ const Sections = ({}) => {
             kudosBy: {
                 post: {
                     title: 'Clubhouse 101',
-                    users: [
-                        {
-                            username: 'Candice Wu',
-                            tagname: '@candicewu'
-                        },
-                        {
-                            username: 'Olivia Rhye',
-                            tagname: '@oliviarhye'
-                        },
-                        {
-                            username: 'Olivia Rhye',
-                            tagname: '@oliviarhye'
-                        },
-                    ]
+                    users: {
+                        username: 'Candice Wu',
+                        tagname: '@candicewu',
+                        amount: 2
+                    },
                 }
             },
         },
@@ -168,9 +161,15 @@ const Sections = ({}) => {
                             
                         </div>
                         <div className='absolute top-0 left-1/2 transform -translate-x-1/2 bg-hero-pattern bg-contain bg-bottom bg-no-repeat w-[80%] lg:w-full h-full flex items-end justify-center relative'>
-                        <div className='hidden absolute bottom-0 -left-[10%] w-fit h-fit 2xl:flex xl:flex lg:flex flex-col gap-y-2'>
-                                
+                        <div className='hidden absolute bottom-0 -left-[10%] w-fit h-fit lg:flex flex-col gap-y-2'>
+                                <div className='hidden absolute bottom-0 -left-[10%] w-fit h-fit lg:flex flex-col gap-y-2'>
+                                {
+                                    notifications.map((notification, index) => (
+                                        <Notification key={index} notif={notification}></Notification>
+                                    ))
+                                }
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -239,12 +238,5 @@ const Sections = ({}) => {
 
 };
 
-/*div className='hidden absolute bottom-0 -left-[10%] w-fit h-fit 2xl:flex xl:flex lg:flex flex-col gap-y-2'>
-                                {
-                                    notifications.map((notification, index) => (
-                                        <Notification key={index} notif={notification}></Notification>
-                                    ))
-                                }
-                            </div>*/
 
 export default Sections;
