@@ -125,7 +125,7 @@ const Sections = ({}) => {
                 <div className='w-full h-full flex flex-col lg:flex-row'>
                     <div className='section-one-div'>
                         <div className='w-full flex flex-col items-start text-start'>
-                            <h1 className='text-3xl xl:text-6xl lg:text-5xl font-medium leading-[2.5rem] 2xl:leading-[4.5rem] xl:leading-[4.5rem] lg:leading-[4.5rem] '>{sectionOneTitle}</h1>
+                            <h1 className='text-3xl xl:text-6xl lg:text-5xl font-semibold leading-[2.5rem] 2xl:leading-[4.5rem] xl:leading-[4.5rem] lg:leading-[4.5rem] '>{sectionOneTitle}</h1>
                             <div className='pl-2 w-[70%] text-start mt-4 '>
                                 <h2 className='text-base text-gray-500'>{sectionOneSubtitle}</h2>
                             </div>
@@ -176,7 +176,7 @@ const Sections = ({}) => {
             <div className='w-full h-[85vh] lg:h-[50vh] pt-10 lg:pt-0 flex flex-col items-center'>
                 
                 <div className='w-full h-1/2 flex flex-col items-center justify-center bg-blue-50 px-4 lg:px-0 text-center lg:bg-transparent pt-10 2xl:pt-0 xl:pt-0'>
-                    <h2 className='text-2xl 2xl:text-4xl xl:text-4xl lg:text-4xl font-normal leading-[1.5rem] 2xl:leading-[3rem] xl:leading-[3rem] lg:leading-[3rem]'>{sectionTwoTitle}</h2>
+                    <h2 className='text-lg lg:text-3lg font-semibold leading-[1.5rem] lg:leading-[3rem]'>{sectionTwoTitle}</h2>
                     <h3 className='text-base text-gray-500'>{sectionTwoSubTitle}</h3>
                 </div>
                 <div className='w-full h-fit 2xl:h-1/2 xl:h-1/2 lg:h-1/2 bg-blue-50 pb-20 2xl:pb-0 xl:pb-0 lg:pb-0 rounded-lg flex flex-col 2xl:flex-row xl:flex-row lg:flex-row items-center justify-center'>
