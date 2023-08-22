@@ -5,7 +5,9 @@ const NotFoundPage = ({}) => {
     return(
         <ScrollContainer>
             {(
-                <div>Login</div>
+                <div className='not-found-container'>
+                    Not found
+                </div>
             )}
         </ScrollContainer>
     );
