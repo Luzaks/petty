@@ -1,27 +1,42 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React + Vite + Typescript layout responsive front end exercise of a project based on the three pages only Landing, Login and Dashboard. 
 
-Currently, two official plugins are available:
+## About the project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can navigate through the application by clicking in the following components:
+- Login button in the navigation bar in the landing page will lead you to the login page
+- Sign in button in login page will get you to the dashboard page
+- Any other route will lead you to the Not found page.
 
-## Expanding the ESLint configuration
+Also you can find some comments of the development process. For future activities pagination, context api, and authentication would like to be improved, as well as some filtering logic found in the dashboard.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Please don't be afraid of adding comments if needed.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
+
+So, do you wanna start? Please check out the following steps!
+
+- Git clone it in your local machine
+- Open your favorite terminal
+- Navigate through the project archive
+- Run the following commands
 
 ```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+   npm i
+   npm run dev
 ```
+- And open your http://localhost:5173/ server on your fav browser
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+There you have it! You will see this React development.
+
+## Stack used
+- React
+- React router dom
+- Typescript
+- Tailwind
+- Material UI icons
+
+## Regards
+
+Thank you a lot for being here. I will be open to any more comments that you may have. Don't hesitate to get in touch!
