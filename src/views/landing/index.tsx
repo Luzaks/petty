@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-
 import { ScrollContainer, NavBar } from '../../shared';
-import { Sections, FAQ } from './components';
+import { Sections, FAQ, FooterLanding } from './components';
 import { State, Contents } from '../../models';
 import './index.css';
 
@@ -55,6 +53,7 @@ const LandingPage = ({}) => {
                       <Sections></Sections>
                     </div>
                     <FAQ></FAQ>
+                    <FooterLanding></FooterLanding>
                 </div>
               </div>
             )}
