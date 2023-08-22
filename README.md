@@ -1,8 +1,8 @@
-# React + TypeScript + Vite
+# ⭐ React + TypeScript + Vite ⭐
 
 This is a simple React + Vite + Typescript layout responsive front end exercise of a project based on the three pages only Landing, Login and Dashboard. 
 
-## About the project
+## 👉 About the project
 
 You can navigate through the application by clicking in the following components:
 - Login button in the navigation bar in the landing page will lead you to the login page
@@ -13,7 +13,7 @@ Also you can find some comments of the development process. For future activitie
 
 Please don't be afraid of adding comments if needed.
 
-## Getting Started
+## 💻 Getting Started
 
 So, do you wanna start? Please check out the following steps!
 
@@ -30,13 +30,13 @@ So, do you wanna start? Please check out the following steps!
 
 There you have it! You will see this React development.
 
-## Stack used
+## 👀 Stack used
 - React
 - React router dom
 - Typescript
 - Tailwind
 - Material UI icons
 
-## Regards
+## 👋 Regards
 
 Thank you a lot for being here. I will be open to any more comments that you may have. Don't hesitate to get in touch!
