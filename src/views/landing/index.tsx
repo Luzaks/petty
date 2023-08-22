@@ -25,6 +25,7 @@ const LandingPage = ({}) => {
                 if (item.id === route.id) {
                   return { ...item, ['isOpened']: route.isOpened };
                 } else {
+                  if (item.dropdown && item.isOpened) item.isOpened = false;
                   return item;
                 }
               });
