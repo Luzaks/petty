@@ -173,7 +173,7 @@ const Sections = ({}) => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-[75vh] lg:h-[50vh] pt-10 lg:pt-0 flex flex-col items-center'>
+            <div className='w-full h-[85vh] lg:h-[50vh] pt-10 lg:pt-0 flex flex-col items-center'>
                 
                 <div className='w-full h-1/2 flex flex-col items-center justify-center bg-blue-50 px-4 lg:px-0 text-center lg:bg-transparent pt-10 2xl:pt-0 xl:pt-0'>
                     <h2 className='text-2xl 2xl:text-4xl xl:text-4xl lg:text-4xl font-normal leading-[1.5rem] 2xl:leading-[3rem] xl:leading-[3rem] lg:leading-[3rem]'>{sectionTwoTitle}</h2>
