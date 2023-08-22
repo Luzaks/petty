@@ -1,0 +1,5 @@
+.dashboard-content-outher-container {
+}
+.landing-content-inner-container {
+    @apply w-full h-fit pt-[74px] lg:pt-[90px] px-5 lg:px-10;
+}
