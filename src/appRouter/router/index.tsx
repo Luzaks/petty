@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { LandingPage, DashboardPage, LoginPage } from '../../views';
+import { LandingPage, DashboardPage, LoginPage, NotFoundPage } from '../../views';
 import { PrivateRoutes } from '..';
 
 const AppRouter = () => {
@@ -11,7 +11,7 @@ const AppRouter = () => {
           <Route element={<DashboardPage />} path="/dashboard"/>
         </Route>
         <Route element={<LoginPage />} path="/login"/>
-        <Route path='*' element={<>Not found</>}/>
+        <Route path='*' element={<NotFoundPage />}/>
       </Routes>
     </Router>
   );

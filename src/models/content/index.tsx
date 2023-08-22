@@ -1,5 +1,6 @@
 import * as LoginContent from './login';
 import * as AppContent from './app';
+import * as LandingContent from './landing';
 import * as DashboardContent from './dashboard';
 import { type RouteProps, type DropdownProps } from './app/index.interfaces';
 import { 
@@ -18,5 +19,6 @@ export {
     TableHeadersProps,
     CountriesAllowedProps,
     StatesAllowedProps,
-    GenresProps
+    GenresProps,
+    LandingContent
 };

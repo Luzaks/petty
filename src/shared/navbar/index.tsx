@@ -51,12 +51,19 @@ const NavBar = (navbarProps: NavbarProps) => {
             </div>
             {
                 !isAuth && loginRoute && (
-                    <div className='flex'>
-                    <button className='navigation-routing-btn' onClick={() => handleOnClickRoute(loginRoute)}>
-                        {loginRoute.title}
-                    </button> 
-                    <button className='w-fit bg-blue-600 rounded-lg	py-2 px-4 text-white font-light text-base' type='submit'>Sign up</button>
-                </div>
+                    <>
+                        <div className='navigation-auth-user-menu'>
+                            <button className='navigation-routing-btn' onClick={() => handleOnClickRoute(loginRoute)}>
+                                {loginRoute.title}
+                            </button> 
+                            <button className='w-fit bg-blue-600 rounded-lg	py-2 px-4 text-white font-light text-base' type='submit'>Sign up</button>
+                        </div>
+                        <div className='navigation-auth-user-dropdown'>
+                            <button>
+                                <MenuOutlinedIcon></MenuOutlinedIcon>
+                            </button>
+                        </div>
+                    </>
                 )
             }
             {
